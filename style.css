@@ -1,0 +1,30 @@
+/* Custom styles that can't be handled by Tailwind */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Animation for the journey line */
+@keyframes journeyFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Ensure Vanta.js background covers full viewport */
+#vanta-bg {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Custom shadow for cards */
+.custom-shadow {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    #vanta-bg {
+        min-height: 90vh;
+    }
+}
